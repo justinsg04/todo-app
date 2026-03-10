@@ -28,7 +28,7 @@ function App() {
   return (
     <div className="app">
       <div className="card">
-        <h1 className="title">📝 To-Do List</h1>
+        <h1 className="title">To-Do List</h1>
 
         <div className="input-row">
           <input

@@ -1,79 +1,56 @@
-.app {
-  min-height: 100vh;
-  background: #f0f4ff;
-  display: flex;
-  justify-content: center;
-  padding-top: 60px;
+body {
+  background: #fff;
   font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
 }
 
+.app {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
 .card {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 32px;
-  width: 400px;
-  height: fit-content;
-  box-shadow: 4px 4px 0px #a0aaff;
-  border: 2px solid #a0aaff;
+  width: 350px;
 }
 
 .title {
   text-align: center;
-  font-size: 2rem;
-  color: #4a4af4;
-  margin: 0 0 24px 0;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .input-row {
   display: flex;
   gap: 8px;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
 }
 
 .input {
   flex: 1;
-  padding: 10px 14px;
-  border-radius: 10px;
-  border: 2px solid #c0c8ff;
+  padding: 6px;
   font-size: 1rem;
   font-family: inherit;
-  outline: none;
 }
 
 .add-button {
-  padding: 10px 16px;
-  border-radius: 10px;
-  border: none;
-  background: #4a4af4;
-  color: #fff;
+  padding: 6px 12px;
   font-family: inherit;
-  font-size: 1rem;
   cursor: pointer;
 }
 
 .list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  list-style: circle;
+  padding-left: 20px;
 }
 
 .list-item {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #f7f8ff;
-  border: 2px solid #e0e4ff;
-  border-radius: 10px;
-  padding: 10px 14px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .task-text {
-  flex: 1;
-  color: #333;
-  font-size: 1rem;
+  margin-right: 8px;
 }
 
 .task-text.completed {
@@ -82,30 +59,12 @@
 }
 
 .complete-button {
-  padding: 6px 10px;
-  border-radius: 8px;
-  border: none;
-  background: #d4ffd4;
-  color: #2a7a2a;
   font-family: inherit;
-  font-size: 0.85rem;
   cursor: pointer;
-  margin-left: 8px;
-}
-
-.complete-button.completed {
-  background: #e0e0e0;
-  color: #888;
+  margin-right: 6px;
 }
 
 .delete-button {
-  padding: 6px 10px;
-  border-radius: 8px;
-  border: none;
-  background: #ffe0e0;
-  color: #c0392b;
   font-family: inherit;
-  font-size: 0.85rem;
   cursor: pointer;
-  margin-left: 8px;
 }
