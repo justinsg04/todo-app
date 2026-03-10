@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.app {
   min-height: 100vh;
+  background: #f0f4ff;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', cursive;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 32px;
+  width: 400px;
+  height: fit-content;
+  box-shadow: 4px 4px 0px #a0aaff;
+  border: 2px solid #a0aaff;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  color: #4a4af4;
+  margin: 0 0 24px 0;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: 2px solid #c0c8ff;
+  font-size: 1rem;
+  font-family: inherit;
+  outline: none;
+}
+
+.add-button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: #4a4af4;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: column;
+  gap: 10px;
+}
+
+.list-item {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  background: #f7f8ff;
+  border: 2px solid #e0e4ff;
+  border-radius: 10px;
+  padding: 10px 14px;
 }
 
-.App-link {
-  color: #61dafb;
+.task-text {
+  flex: 1;
+  color: #333;
+  font-size: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.task-text.completed {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.complete-button {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  background: #d4ffd4;
+  color: #2a7a2a;
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.complete-button.completed {
+  background: #e0e0e0;
+  color: #888;
+}
+
+.delete-button {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  background: #ffe0e0;
+  color: #c0392b;
+  font-family: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  margin-left: 8px;
 }
