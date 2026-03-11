@@ -1,9 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  const [tasks, setTasks] = useState([]); // List of tasks
+  const [tasks, setTasks] = useState(() => {
+    const saved = JSON.parse(localStorage.getItem("tasks"));
+    return saved || []; // load tasks from localStorage on page load
+  });
   const [input, setInput] = useState(""); //Input field value
+
+  // save tasks to localStorage every time tasks changes
+  useEffect(() => {
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }, [tasks]);
 
   function addTask() {
     if (input.trim() === "") return; // prevents adding empty tasks
@@ -28,7 +36,7 @@ function App() {
   return (
     <div className="app">
       <div className="card">
-        <h1 className="title">To-Do List</h1>
+        <h1 className="title">To-Do</h1>
 
         <div className="input-row">
           <input

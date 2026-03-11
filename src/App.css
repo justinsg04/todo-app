@@ -38,6 +38,12 @@ body {
   cursor: pointer;
 }
 
+.list-item::before {
+  content: "○";
+  font-size: 1.2rem;
+  margin-right: 8px;
+}
+
 .list {
   list-style: circle;
   padding-left: 20px;
