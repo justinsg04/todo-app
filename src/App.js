@@ -9,7 +9,6 @@ import UndoIcon from "@mui/icons-material/Undo";
 import { DatePicker } from "@mui/x-date-pickers/DatePicker";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
-import dayjs from "dayjs";
 
 function App() {
   const [tasks, setTasks] = useState(() => {
