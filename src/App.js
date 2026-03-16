@@ -70,7 +70,7 @@ function App() {
               inputRef={inputRef}
               variant="outlined"
               size="small"
-              placeholder="Enter a task..."
+              placeholder="Enter a task"
               value={input}
               onChange={(e) => setInput(e.target.value)} // updates input as user types
               onKeyDown={handleKeyDown} // allows pressing enter to add task
